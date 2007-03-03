@@ -19,7 +19,6 @@
 		<em:description>Context menuden sozlukte arama ne guzel olur degil mi :)</em:description>
 		<em:creator>Huseyin ASLITURK</em:creator>
 		<em:homepageURL>http://code.google.com/p/sozlukmenu/</em:homepageURL>
-		
-		<em:iconURL>chrome://sozlukmenu/skin/icon.png</em:iconURL>
+		<em:iconURL>chrome://sozlukmenu/content/icon.png</em:iconURL>
 	</Description>
 </RDF>
