@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		
+		<em:id>aslitur@hotmail.com</em:id>
+		<em:version>1.0.0</em:version>
+		<em:type>2</em:type>
+		
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:maxVersion>2.0.0.*</em:maxVersion>
+				<em:minVersion>2.0.0.0</em:minVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:name>Sozluk Menu</em:name>
+		<em:description>Context menuden sozlukte arama ne guzel olur degil mi :)</em:description>
+		<em:creator>Huseyin ASLITURK</em:creator>
+		<em:homepageURL>http://www.asliturk.com</em:homepageURL>
+		
+		<em:iconURL>chrome://sozlukmenu/skin/icon.png</em:iconURL>
+	</Description>
+</RDF>
