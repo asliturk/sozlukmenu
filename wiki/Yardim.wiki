@@ -1,0 +1,6 @@
+#summary Kullanım klavuzu
+
+= Kullanım =
+  * Sayfa içinde bir metin seçin
+  * Sağ tuşa tıklayın
+  * "Zardan'da Ara" veya "The Free Dictionary'de Ara" seçeneğini tıklayın
