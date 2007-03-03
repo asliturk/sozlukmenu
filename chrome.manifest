@@ -1,0 +1,2 @@
+content	sozlukmenu content/
+overlay	chrome://browser/content/browser.xul chrome://sozlukmenu/content/overlay.xul

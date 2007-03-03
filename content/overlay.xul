@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<overlay id="sozlukMenuOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://sozlukmenu/content/common.js" />
+	<script type="application/x-javascript" src="chrome://sozlukmenu/content/overlay.js" />
+
+	<popup id="contentAreaContextMenu">
+  		<menuitem id="zarganContextMenu"    accesskey="Z" insertafter="context-searchselect" oncommand="onZarganMenu();"/>
+  		<menuitem id="theFreeDictinaryMenu" accesskey="D" insertafter="context-searchselect" oncommand="onTheFreeDictinaryMenuMenu();"/>
+	</popup>
+</overlay>
