@@ -1,3 +1,5 @@
+String.prototype.trim = function(){return this.replace(/(^\s+)|(\s+$)/g, "");}
+
 // Taken from the DictionarySearch extension by Jaap Haitsma <jaap@haitsma.org>
 function getSelectedText()
 {
@@ -28,11 +30,21 @@ function getSelectedText()
 	// Remove certain characters at the beginning and end of every word
 	for (i = 0; i < selection.length; i++)
 	{
-		selection[i] = selection[i].replace(/^(\&|\(|\)|\[|\]|\{|\}|"|,|\.|!|\?|'|:|;)+/, "");
-		selection[i] = selection[i].replace(/(\&|\(|\)|\[|\]|\{|\}|"|,|\.|!|\?|'|:|;)+$/, "");
+		selection[i] = selection[i].replace(/^(\&|\(|\)|\[|\]|\{|\}|"|,|\.|!|\?|'|:|;)+/, ""); // "
+		selection[i] = selection[i].replace(/(\&|\(|\)|\[|\]|\{|\}|"|,|\.|!|\?|'|:|;)+$/, ""); // "
 	}
 	
 	selection = selection.join(" ");
 	
 	return selection;
+}
+
+
+function openNewTab(pUrl)
+{
+	var newTab = window.getBrowser().addTab(pUrl);
+//	if( ! prefs.getBoolPref("browser.tabs.loadInBackground") )
+//	{
+		window.getBrowser().selectedTab = newTab;
+//	}
 }
