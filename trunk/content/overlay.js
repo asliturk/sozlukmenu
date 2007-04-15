@@ -1,5 +1,3 @@
-String.prototype.trim = function(){return this.replace(/(^\s+)|(\s+$)/g, "");}
-
 var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 
 window.addEventListener("load", onMenuInit, false);
@@ -15,27 +13,30 @@ function onMenuInit()
 function onContextMenuShowing(e)
 {
 	var selectedText = getSelectedText();
-	var zarganContextMenu = document.getElementById("zarganContextMenu");
-	var theFreeDictinaryMenu = document.getElementById("theFreeDictinaryMenu");
+    var solukMenu = document.getElementById("soluk-menu");
 
 	if (selectedText != "")
 	{
-		zarganContextMenu.hidden = false;
-		theFreeDictinaryMenu.hidden = false;
+        solukMenu.hidden = false;
 
 		if (selectedText.length > 25)
 		{
 			selectedText = selectedText.substr(0, 21) + "...";
         }
 
-		zarganContextMenu.setAttribute("label", 'Zargan\'da Ara : "' + selectedText + '"');
-		theFreeDictinaryMenu.setAttribute("label", 'The Free Dictinary\'de Ara : "' + selectedText + '"');
+
+        var tdkContextMenu = document.getElementById("tdkContextMenu");
+        var zarganContextMenu = document.getElementById("zarganContextMenu");
+        var theFreeDictinaryMenu = document.getElementById("theFreeDictinaryMenu");
+
+		tdkContextMenu.setAttribute("label",       "TDK'da Ara : \"" + selectedText + "\"");
+		zarganContextMenu.setAttribute("label",    "Zargan'da Ara : \"" + selectedText + "\"");
+		theFreeDictinaryMenu.setAttribute("label", "The Free Dictinary'de Ara : \"" + selectedText + "\"");
 	}
 	else
 	{
 		// Eðer seçili metin yoksa menümüzü gizleyelim
-		zarganContextMenu.hidden = true;
-		theFreeDictinaryMenu.hidden = true;
+        solukMenu.hidden = true;
 	}	
 }
 
@@ -55,11 +56,20 @@ function onTheFreeDictinaryMenuMenu()
 	openNewTab(url);
 }
 
-function openNewTab(pUrl)
+
+function onTheFreeDictinaryMenuMenu()
 {
-	var newTab = window.getBrowser().addTab(pUrl);
-//	if( ! prefs.getBoolPref("browser.tabs.loadInBackground") )
-//	{
-		window.getBrowser().selectedTab = newTab;
-//	}
+	var url = "http://www.thefreedictionary.com/";
+	url = url + getSelectedText();
+
+	openNewTab(url);
+}
+
+
+function onTDKMenu()
+{
+	var url = "http://www.tdk.gov.tr/TR/SozBul.aspx?F6E10F8892433CFFAAF6AA849816B2EF4376734BED947CDE&Kelime=";
+	url = url + getSelectedText();
+
+	openNewTab(url);
 }

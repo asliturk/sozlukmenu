@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="core.css" type="text/css"?>
+<window class="dialog"
+        title="Sözlük Menü - Hakkında"
+        orient="vertical"
+        autostretch="always"
+        onload="sizeToContent()"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://sozlukmenu/content/common.js" />
+
+<groupbox align="center" orient="horizontal">
+    <vbox>
+        <text value="Sözlük Menü" style="font-weight: bold; font-size: x-large;"/>
+        <text value="Sürüm 0.0.2"/>
+        <separator class="thin"/>
+        <text value="Geliştiren:" style="font-weight: bold;"/>
+        <text value="Hüseyin ASLITÜRK" class="url" onclick="window.open('http://www.asliturk.com');"/>
+        <separator class="thin"/>
+        <text value="Web Sitesi:" style="font-weight: bold;"/>
+        <text value="http://code.google.com/p/sozlukmenu/" class="url" onclick="window.open('http://code.google.com/p/sozlukmenu/');"/>
+        <separator class="thin"/>
+        <text value="E-Posta:" style="font-weight: bold;"/>
+        <text value="sozluk.menu@gmail.com" class="url" onclick="window.open('mailto:sozluk.menu@gmail.com');"/>
+        <separator class="thin"/>
+    </vbox>
+    <spring flex="1"/>
+    <image src="chrome://sozlukmenu/content/icon.png"/>
+</groupbox>
+<hbox>
+    <spacer flex="1"/>
+    <button label="Kapat" oncommand="window.close();"/>
+</hbox>
+</window>

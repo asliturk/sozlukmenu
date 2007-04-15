@@ -5,7 +5,12 @@
 	<script type="application/x-javascript" src="chrome://sozlukmenu/content/overlay.js" />
 
 	<popup id="contentAreaContextMenu">
-  		<menuitem id="zarganContextMenu"    accesskey="Z" insertafter="context-searchselect" oncommand="onZarganMenu();"/>
-  		<menuitem id="theFreeDictinaryMenu" accesskey="D" insertafter="context-searchselect" oncommand="onTheFreeDictinaryMenuMenu();"/>
+        <menu id="soluk-menu" label="Sözlük Menü">
+            <menupopup id="soluk-menu-popup">
+                <menuitem id="tdkContextMenu"       accesskey="T" lable="TDK" insertafter="context-searchselect" oncommand="onTDKMenu();"/>
+                <menuitem id="zarganContextMenu"    accesskey="Z" lable="ZGN" insertafter="context-searchselect" oncommand="onZarganMenu();"/>
+                <menuitem id="theFreeDictinaryMenu" accesskey="D" lable="TFD" insertafter="context-searchselect" oncommand="onTheFreeDictinaryMenuMenu();"/>
+            </menupopup>
+        </menu>
 	</popup>
 </overlay>
