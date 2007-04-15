@@ -3,8 +3,8 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 		
-		<em:id>aslitur@hotmail.com</em:id>
-		<em:version>0.0.1</em:version>
+		<em:id>sozluk.menu@gmail.com</em:id>
+		<em:version>0.0.2</em:version>
 		<em:type>2</em:type>
 		
 		<em:targetApplication>
@@ -15,10 +15,12 @@
 			</Description>
 		</em:targetApplication>
 
-		<em:name>Sozluk Menu</em:name>
-		<em:description>Context menuden sozlukte arama ne guzel olur degil mi :)</em:description>
-		<em:creator>Huseyin ASLITURK</em:creator>
-		<em:homepageURL>http://code.google.com/p/sozlukmenu/</em:homepageURL>
+		<em:name>Sözlük Menü</em:name>
+		<em:description>Context menüden sözlükte arama ne güzel olur değil mi :)</em:description>
 		<em:iconURL>chrome://sozlukmenu/content/icon.png</em:iconURL>
+        <em:aboutURL>chrome://sozlukmenu/content/about.xul</em:aboutURL>
+        <em:creator>Hüseyin ASLITÜRK</em:creator>
+		<em:homepageURL>http://code.google.com/p/sozlukmenu/</em:homepageURL>
+        <em:updateURL>http://sozlukmenu.googlecode.com/svn/trunk/update.rdf</em:updateURL>
 	</Description>
 </RDF>
