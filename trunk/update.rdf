@@ -5,11 +5,11 @@
     <RDF:Description about="urn:mozilla:extension:sozluk.menu@gmail.com">
         <em:updates>
             <RDF:Seq>
-                <RDF:li RDF:resource="urn:mozilla:extension:sozluk.menu@gmail.com:0.0.2"/>
+                <RDF:li RDF:resource="urn:mozilla:extension:sozluk.menu@gmail.com:0.0.3"/>
             </RDF:Seq>
         </em:updates>
 
         <em:version>0.0.2</em:version>
-        <em:updateLink>http://sozlukmenu.googlecode.com/files/sozlukmenu-0.0.2.xpi</em:updateLink>
+        <em:updateLink>http://sozlukmenu.googlecode.com/files/sozlukmenu-0.0.3.xpi</em:updateLink>
   </RDF:Description>
 </RDF:RDF>
