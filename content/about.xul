@@ -13,7 +13,7 @@
 <groupbox align="center" orient="horizontal">
     <vbox>
         <text value="Sözlük Menü" style="font-weight: bold; font-size: x-large;"/>
-        <text value="Sürüm 0.0.2"/>
+        <text value="Sürüm 0.0.3 (Firefox 3.0b1)"/>
         <separator class="thin"/>
         <text value="Geliştiren:" style="font-weight: bold;"/>
         <text value="Hüseyin ASLITÜRK" class="url" onclick="window.open('http://www.asliturk.com');"/>
