@@ -9,7 +9,7 @@
             </RDF:Seq>
         </em:updates>
 
-        <em:version>0.0.2</em:version>
+        <em:version>0.0.3</em:version>
         <em:updateLink>http://sozlukmenu.googlecode.com/files/sozlukmenu-0.0.3.xpi</em:updateLink>
   </RDF:Description>
 </RDF:RDF>
