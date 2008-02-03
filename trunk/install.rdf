@@ -21,6 +21,6 @@
 		<em:aboutURL>chrome://sozlukmenu/content/about.xul</em:aboutURL>
 		<em:creator>Hüseyin ASLITÜRK</em:creator>
 		<em:homepageURL>http://code.google.com/p/sozlukmenu/</em:homepageURL>
-		<em:updateURL>http://sozlukmenu.googlecode.com/svn/trunk/update.rdf</em:updateURL>
+		<em:updateURL>https://sozlukmenu.googlecode.com/svn/trunk/update.rdf</em:updateURL>
 	</Description>
 </RDF>
