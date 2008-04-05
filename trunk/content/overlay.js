@@ -28,10 +28,14 @@ function onContextMenuShowing(e)
         var tdkContextMenu = document.getElementById("tdkContextMenu");
         var zarganContextMenu = document.getElementById("zarganContextMenu");
         var theFreeDictinaryMenu = document.getElementById("theFreeDictinaryMenu");
+        var babelfishEnMenu = document.getElementById("babelfishEnMenu");
+        var babelfishDeMenu = document.getElementById("babelfishDeMenu");
 
 		tdkContextMenu.setAttribute("label",       "TDK'da Ara : \"" + selectedText + "\"");
 		zarganContextMenu.setAttribute("label",    "Zargan'da Ara : \"" + selectedText + "\"");
 		theFreeDictinaryMenu.setAttribute("label", "The Free Dictinary'de Ara : \"" + selectedText + "\"");
+		babelfishEnMenu.setAttribute("label",      "Babelfish Altavista'da (EN -> DE) Ara : \"" + selectedText + "\"");
+		babelfishDeMenu.setAttribute("label",      "Babelfish Altavista'da (DE -> EN) Ara : \"" + selectedText + "\"");
 	}
 	else
 	{
@@ -56,6 +60,13 @@ function onTheFreeDictinaryMenuMenu()
 	openNewTab(url);
 }
 
+function onBabelfishMenu(plang1, plang2)
+{
+	var url = "http://babelfish.altavista.com/tr?lp=" + plang1 + "_" + plang2 + "&trtext=";
+	url = url + getSelectedText();
+
+	openNewTab(url);
+}
 
 function onTheFreeDictinaryMenuMenu()
 {
