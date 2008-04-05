@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
 
 <overlay id="sozlukMenuOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	<script type="application/x-javascript" src="chrome://sozlukmenu/content/common.js" />
-	<script type="application/x-javascript" src="chrome://sozlukmenu/content/overlay.js" />
+    <script type="application/x-javascript" src="chrome://sozlukmenu/content/common.js" />
+    <script type="application/x-javascript" src="chrome://sozlukmenu/content/overlay.js" />
 
-	<popup id="contentAreaContextMenu">
+    <popup id="contentAreaContextMenu">
         <menu id="soluk-menu" label="Sözlük Menü">
             <menupopup id="soluk-menu-popup">
                 <menuitem id="tdkContextMenu"       accesskey="T" lable="TDK" insertafter="context-searchselect" oncommand="onTDKMenu();"/>
                 <menuitem id="zarganContextMenu"    accesskey="Z" lable="ZGN" insertafter="context-searchselect" oncommand="onZarganMenu();"/>
                 <menuitem id="theFreeDictinaryMenu" accesskey="D" lable="TFD" insertafter="context-searchselect" oncommand="onTheFreeDictinaryMenuMenu();"/>
+                <menuitem id="babelfishEnMenu"      accesskey="E" lable="BFA_EN_DE" insertafter="context-searchselect" oncommand="onBabelfishMenu('en', 'de');"/>
+                <menuitem id="babelfishDeMenu"      accesskey="D" lable="BFA_DE_EN" insertafter="context-searchselect" oncommand="onBabelfishMenu('de', 'en');"/>
             </menupopup>
         </menu>
-	</popup>
+    </popup>
 </overlay>
