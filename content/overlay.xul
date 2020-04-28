@@ -12,6 +12,7 @@
                 <menuitem id="theFreeDictinaryMenu" accesskey="D" lable="TFD" insertafter="context-searchselect" oncommand="onTheFreeDictinaryMenuMenu();"/>
                 <menuitem id="babelfishEnMenu"      accesskey="E" lable="BFA_EN_DE" insertafter="context-searchselect" oncommand="onBabelfishMenu('en', 'de');"/>
                 <menuitem id="babelfishDeMenu"      accesskey="D" lable="BFA_DE_EN" insertafter="context-searchselect" oncommand="onBabelfishMenu('de', 'en');"/>
+				<menuitem id="googleTranslate"      accesskey="G" lable="GOO_EN_TR" insertafter="context-searchselect" oncommand="onGoogleTranslateMenu('en', 'tr');"/>
             </menupopup>
         </menu>
     </popup>

@@ -30,12 +30,14 @@ function onContextMenuShowing(e)
         var theFreeDictinaryMenu = document.getElementById("theFreeDictinaryMenu");
         var babelfishEnMenu = document.getElementById("babelfishEnMenu");
         var babelfishDeMenu = document.getElementById("babelfishDeMenu");
+		var googleTranslate = document.getElementById("googleTranslate");
 
 		tdkContextMenu.setAttribute("label",       "TDK'da Ara : \"" + selectedText + "\"");
 		zarganContextMenu.setAttribute("label",    "Zargan'da Ara : \"" + selectedText + "\"");
 		theFreeDictinaryMenu.setAttribute("label", "The Free Dictinary'de Ara : \"" + selectedText + "\"");
 		babelfishEnMenu.setAttribute("label",      "Babelfish Altavista'da (EN -> DE) Ara : \"" + selectedText + "\"");
 		babelfishDeMenu.setAttribute("label",      "Babelfish Altavista'da (DE -> EN) Ara : \"" + selectedText + "\"");
+		googleTranslate.setAttribute("label",      "Google Translate (EN -> TR) Ara: \"" + selectedText + "\"");
 	}
 	else
 	{
@@ -80,6 +82,14 @@ function onTheFreeDictinaryMenuMenu()
 function onTDKMenu()
 {
 	var url = "http://www.tdk.gov.tr/TR/SozBul.aspx?F6E10F8892433CFFAAF6AA849816B2EF4376734BED947CDE&Kelime=";
+	url = url + getSelectedText();
+
+	openNewTab(url);
+}
+
+function onGoogleTranslateMenu(plang1, plang2)
+{
+	var url = "http://translate.google.com/#" + plang1 + "/" + plang2 + "/";
 	url = url + getSelectedText();
 
 	openNewTab(url);
